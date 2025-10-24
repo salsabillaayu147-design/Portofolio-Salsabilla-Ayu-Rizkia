@@ -1,11 +1,11 @@
 :root {
-    --primary-color: #2c3e50;
-    --accent-color: #e74c3c;
+    --primary-color: #24384d;
+    --accent-color: #2e2c2c;
     --background-color: #f8f9fa;
     --card-background: #ffffff;
-    --text-color: #555;
+    --text-color: #474747;
     --link-color: #3498db;
-    --font-family-primary: 'Arial', sans-serif; 
+    --font-family-primary: 'Arial', sans-serif;
 }
 
 * {
@@ -108,6 +108,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 2em;
 }
 
+/* Item Daftar (Project/Article) */
 .list-item {
     display: flex;
     margin-bottom: 2em;
@@ -126,9 +127,14 @@ h1, h2, h3, h4, h5, h6 {
     width: 100px;
     height: 100px;
     margin-right: 1.5em;
-    background-color: #bdc3c7;
     border-radius: 5px;
     overflow: hidden;
+}
+
+.list-item-thumb img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .list-item-content h3 {
@@ -140,17 +146,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.85em;
     color: #999;
     margin-bottom: 0.5em;
-}
-
-.tag {
-    display: inline-block;
-    background-color: #ecf0f1;
-    color: var(--primary-color);
-    padding: 0.3em 0.6em;
-    border-radius: 3px;
-    font-size: 0.75em;
-    font-weight: bold;
-    margin-right: 0.5em;
 }
 
 .hero {
@@ -181,8 +176,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-image img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    display: block;
 }
 
 .single-article img {
@@ -191,6 +186,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 8px;
     margin: 1.5em 0;
 }
+
 .single-article h2 {
     font-size: 1.8em;
     margin-top: 2em;
@@ -236,7 +232,7 @@ h1, h2, h3, h4, h5, h6 {
         cursor: pointer;
         color: var(--primary-color);
     }
-
+    
     .hero {
         flex-direction: column;
         text-align: center;
@@ -252,7 +248,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     .list-item-thumb {
         width: 100%;
-        height: 150px;
+        height: auto;
         margin-right: 0;
         margin-bottom: 1em;
     }
@@ -260,7 +256,7 @@ h1, h2, h3, h4, h5, h6 {
     .homepage .sidebar {
         display: none; 
     }
-
+    
     .hero-text h1 {
         font-size: 2.5em;
     }
@@ -268,6 +264,7 @@ h1, h2, h3, h4, h5, h6 {
         padding: 1.5em;
     }
 }
+
 @media (min-width: 993px) {
     .menu-toggle {
         display: none;
@@ -283,4 +280,5 @@ h1, h2, h3, h4, h5, h6 {
         flex: 1;
     }
 }
+
 
